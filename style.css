@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mona-Sans Regular", sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+span {
+  color: #fdc900;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #161817;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  z-index: 100;
+}
+nav a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+nav ul {
+  margin: 20px 30px;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  list-style: none;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: #fdc900;
+  transition: 0.5s;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fdc900;
+  transition: width 0.3s;
+}
+nav ul li a:hover::after{
+  width: 80%;
+}
+
+.judul {
+  padding-left: 250px;
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.judul:hover {
+  cursor: pointer;
+}
+
+.logo {
+  padding-left: 10px;
+  left: 50%;
+}
+
+.parallax {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro {
+  background-image: url("foto/back.jpg");
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 5px;
+}
+
+.hero .content p {
+  font-size: 1.3rem;
+  margin-top: 45px;
+  font-weight: 300;
+}
+.shadow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 1) 5%,
+    rgba(225, 225, 225, 0) 25%
+  );
+}
+
+
+.container2 {
+  background-color: black;
+  position: relative;
+  height: 100vh;
+  color: white;
+  padding: 5rem 7% 1.4rem;
+}
+.container2 h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.row {
+  display: flex;
+}
+
+.container2 .row .about-img {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.container2 .row .about-img img {
+  width: 100%;
+}
+
+.container2 .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container2 .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 50;
+  line-height: 1.6;
+}
+
+.deskripsi {
+  position: relative;
+  background-color: #fdc900;
+  width: 100%;
+  min-height: 300vh;
+  color: #fff;
+}
+
+.deskripsi h2 {
+  font-family: "Lora", serif;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+}
+.deskripsi p {
+  font-size: 45px;
+  font-family: "Lora", serif;
+}
+.deskripsi div {
+  border-radius: 25px;
+  position: absolute;
+  background-color: black;
+  box-shadow: 2px 2px 5px 2px black;
+  padding: 30px;
+}
+
+.deskripsi .d1 {
+  width: 43%;
+  height: 700px;
+  right: 8%;
+  top: 250px;
+}
+.deskripsi .d2 {
+  position: absolute;
+  width: 40%;
+  height: 500px;
+  left: 6%;
+  top: 35%;
+}
+.deskripsi .d3 {
+  position: absolute;
+  width: 40%;
+  height: 900px;
+  right: 8%;
+  top: 50%;
+}
+
+
+
+
+.container3 {
+  background-color: #fdc900;
+  position: relative;
+  height: 100vh;
+  color: #161817;
+}
+
+.container3 .des-galeri {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container3 .des-galeri h2 {
+  color: #161817;
+  font-size: 6rem;
+  font-family: "Lora", serif;
+}
+
+.galeri {
+  width: 85vmin;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 70%;
+  overflow: hidden;
+  border: 20px solid #fff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+@keyframes slide {
+  0%,
+  25% {
+    transform: translateX(0);
+  }
+  30%,
+  50% {
+    transform: translateX(-100%);
+  }
+  55%,
+  75% {
+    transform: translateX(-200%);
+  }
+  80%,
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+img {
+  width: 100%;
+}
+
+
+.container4 {
+  background-color: black;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container4 div {
+  font-family: "Lora", serif;
+  font-size: 100px;
+  padding-top: 5px;
+  line-height: 120px;
+}
+
+.indent-in {
+  text-indent: 100px;
+}
+
+.indent-out {
+  text-indent: -100px;
+}
+.container5 {
+  background-color: black;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  gap: 20px;
+  
+  /* Menetapkan grid layout dengan 2 baris dan 2 kolom (kata chat ai)*/
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container5 div {
+  height: 220px;
+  padding: 20px;
+}
+
+.waves {
+  background-color: black;
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #fdc900;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+footer .social_icon li a {
+  font-size: 2em;
+  color: #161817;
+  margin: 0 10px;
+  display: inline-block;
+  transition: .5s;
+}
+footer .menu li a {
+  font-size: 1.2em;
+  color: #161817;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: .75;
+}
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer p {
+  color: #161817;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* SCROLL ANIMATION START */
+
+.autoShow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+  from{
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+ /* SCROLL ANIMATION END */
+
+
+ /* SCROLL ANIMATION 2 START */
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.galeri:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+ /* SCROLL ANIMATION 2 END */
+
+/* SCROLL BLUR START */
+
+.autoBlur{
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+  0%{
+    filter: blur(40px);
+  }
+  45%, 55% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
+
+/* SCROLL BLUR END */
+
+
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+  header {
+    height: 50px;
+    width: 100%;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  nav a {
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  nav ul {
+    margin: 5px 10px;
+  }
+  .judul {
+    font-size: 10px;
+    padding-left: 0;
+  }
+
+  .container2 .row {
+    flex-wrap: wrap;
+  }
+
+  .deskripsi {
+    position: relative;
+    background-color: #fdc900;
+    width: 100%;
+    min-height: 300vh;
+    color: #fff;
+  }
+  
+  .deskripsi h2 {
+    font-family: "Lora", serif;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+  }
+  .deskripsi p {
+    font-size: 25px;
+    font-family: "Lora", serif;
+  }
+  .deskripsi div {
+    border-radius: 25px;
+    position: absolute;
+    background-color: black;
+    box-shadow: 2px 2px 5px 2px black;
+    padding: 15px;
+  }
+  
+  .deskripsi .d1 {
+    width: 60%;
+    height: 600px;
+    right: 8%;
+    top: 250px;
+  }
+  .deskripsi .d2 {
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    left: 6%;
+    top: 35%;
+  }
+  .deskripsi .d3 {
+    position: absolute;
+    width: 60%;
+    height: 700px;
+    right: 8%;
+    top: 60%;
+  }
+
+  .container3 {
+    background-color: #fdc900;
+    position: relative;
+    height: 100vh;
+    color: #161817;
+  }
+  
+  .container3 .des-galeri {
+    position: absolute;
+    top: 7%;
+    left: 1%;
+    height: 200px;
+    width: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container3 .des-galeri h2 {
+    color: #161817;
+    font-size: 5rem;
+    font-family: "Lora", serif;
+  }
+  
+  .galeri {
+    width: 85vmin;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #161817;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+  }
+  .mobileindentin{
+    text-indent: 20px;
+  }
+  .mobileindentout {
+    text-indent: -80px;
+  }
+
+  .container5 {
+    height: 80vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+}
+
